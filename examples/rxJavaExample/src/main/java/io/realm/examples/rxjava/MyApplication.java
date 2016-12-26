@@ -46,6 +46,7 @@ public class MyApplication extends Application {
         super.onCreate();
         context = this;
         Realm.init(this);
+        //realm配置
         RealmConfiguration config = new RealmConfiguration.Builder().build();
         Realm.deleteRealm(config);
         Realm.setDefaultConfiguration(config);
